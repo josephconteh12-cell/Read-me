@@ -1,0 +1,68 @@
+<template>
+<div id="root" data-composition-id="02-chatgpt" data-start="0" data-duration="8.299" data-width="1080" data-height="1920">
+<script src="assets/vendor/gsap.min.js"></script>
+<style>
+@font-face{font-family:"Inter";font-weight:500;font-style:normal;src:url("assets/fonts/inter-latin-500-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:700;font-style:normal;src:url("assets/fonts/inter-latin-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:800;font-style:normal;src:url("assets/fonts/inter-latin-800-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:900;font-style:normal;src:url("assets/fonts/inter-latin-900-normal.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-weight:400;font-style:normal;src:url("assets/fonts/space-grotesk-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-weight:700;font-style:normal;src:url("assets/fonts/space-grotesk-latin-700-normal.woff2") format("woff2");}
+#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:"Inter",sans-serif;color:#000000;}
+#f02-chatgpt-bg{position:absolute;inset:0;background:#C0F7FE;}
+#f02-chatgpt-dots{position:absolute;inset:0;background-image:radial-gradient(#000 2px, transparent 2.4px);background-size:40px 40px;opacity:.13;}
+.f02-chatgpt-abs{position:absolute;}
+.f02-chatgpt-card{position:absolute;background:#FFFFFF;border:6px solid #000;box-shadow:12px 12px 0 #000;}
+.f02-chatgpt-pill{position:absolute;display:flex;align-items:center;justify-content:center;border:4px solid #000;box-shadow:6px 6px 0 #000;border-radius:9999px;font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;}
+.f02-chatgpt-display{position:absolute;font-weight:900;text-transform:uppercase;letter-spacing:-0.03em;line-height:.92;white-space:nowrap;}
+.f02-chatgpt-rank{left:64px;top:140px;width:270px;height:230px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:170px;letter-spacing:-0.05em;line-height:1;}
+.f02-chatgpt-star{position:absolute;border:0;clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);}
+.f02-chatgpt-stripe{position:absolute;border:5px solid #000;background:repeating-linear-gradient(45deg,#000 0 14px,var(--c) 14px 32px);}
+.f02-chatgpt-chip{position:absolute;height:104px;padding:0 38px;font-size:40px;}
+.f02-chatgpt-line{position:absolute;height:26px;background:#000;opacity:.14;}
+.f02-chatgpt-mono{font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
+.f02-chatgpt-ch{opacity:0;}
+</style>
+<div id="f02-chatgpt-ground" class="clip" data-start="0" data-duration="8.299" data-track-index="0" style="position:absolute;inset:0;"><div id="f02-chatgpt-bg"></div><div id="f02-chatgpt-dots"></div></div>
+<div id="f02-chatgpt-stage" class="clip" data-start="0" data-duration="8.299" data-track-index="1" style="position:absolute;inset:0;">
+
+<div id="f02-chatgpt-rank" class="f02-chatgpt-card f02-chatgpt-rank" style="transform:rotate(-6deg);">#5</div>
+<div id="f02-chatgpt-tag" class="f02-chatgpt-pill" style="left:380px;top:200px;height:92px;padding:0 36px;font-size:36px;background:#F7CB46;">AI APP</div>
+<div id="f02-chatgpt-name" class="f02-chatgpt-display" style="left:64px;top:430px;font-size:176px;">CHATGPT</div>
+<div id="f02-chatgpt-chat" class="f02-chatgpt-card" style="left:64px;top:690px;width:952px;height:560px;">
+  <div class="f02-chatgpt-abs f02-chatgpt-mono" style="left:36px;top:28px;font-size:28px;opacity:.6;">NEW CHAT</div>
+  <div class="f02-chatgpt-abs" style="left:36px;top:90px;width:870px;height:120px;border:4px solid #000;background:#FFFDF5;"></div>
+  <div class="f02-chatgpt-abs" style="left:62px;top:124px;font-size:40px;font-weight:500;white-space:nowrap;"><span class="f02-chatgpt-ch">W</span><span class="f02-chatgpt-ch">r</span><span class="f02-chatgpt-ch">i</span><span class="f02-chatgpt-ch">t</span><span class="f02-chatgpt-ch">e</span><span class="f02-chatgpt-ch">&nbsp;</span><span class="f02-chatgpt-ch">a</span><span class="f02-chatgpt-ch">&nbsp;</span><span class="f02-chatgpt-ch">p</span><span class="f02-chatgpt-ch">o</span><span class="f02-chatgpt-ch">l</span><span class="f02-chatgpt-ch">i</span><span class="f02-chatgpt-ch">t</span><span class="f02-chatgpt-ch">e</span><span class="f02-chatgpt-ch">&nbsp;</span><span class="f02-chatgpt-ch">e</span><span class="f02-chatgpt-ch">m</span><span class="f02-chatgpt-ch">a</span><span class="f02-chatgpt-ch">i</span><span class="f02-chatgpt-ch">l</span><span class="f02-chatgpt-ch">&nbsp;</span><span class="f02-chatgpt-ch">t</span><span class="f02-chatgpt-ch">o</span><span class="f02-chatgpt-ch">&nbsp;</span><span class="f02-chatgpt-ch">m</span><span class="f02-chatgpt-ch">y</span><span class="f02-chatgpt-ch">&nbsp;</span><span class="f02-chatgpt-ch">l</span><span class="f02-chatgpt-ch">a</span><span class="f02-chatgpt-ch">n</span><span class="f02-chatgpt-ch">d</span><span class="f02-chatgpt-ch">l</span><span class="f02-chatgpt-ch">o</span><span class="f02-chatgpt-ch">r</span><span class="f02-chatgpt-ch">d</span><span class="f02-chatgpt-ch">…</span><span id="f02-chatgpt-caret" style="display:inline-block;width:4px;height:44px;background:#000;vertical-align:middle;margin-left:4px;"></span></div>
+  <div id="f02-chatgpt-send" class="f02-chatgpt-abs" style="right:52px;top:108px;width:84px;height:84px;background:#F7CB46;border:4px solid #000;box-shadow:4px 4px 0 #000;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:900;">↑</div>
+  <div id="f02-chatgpt-l1" class="f02-chatgpt-line" style="left:36px;top:270px;width:820px;transform-origin:left;"></div>
+  <div id="f02-chatgpt-l2" class="f02-chatgpt-line" style="left:36px;top:320px;width:760px;transform-origin:left;"></div>
+  <div id="f02-chatgpt-l3" class="f02-chatgpt-line" style="left:36px;top:370px;width:840px;transform-origin:left;"></div>
+  <div id="f02-chatgpt-l4" class="f02-chatgpt-line" style="left:36px;top:420px;width:520px;transform-origin:left;"></div>
+</div>
+<div id="f02-chatgpt-c1" class="f02-chatgpt-pill f02-chatgpt-chip" style="left:64px;top:1340px;background:#FE90E8;">DRAFTS</div>
+<div id="f02-chatgpt-c2" class="f02-chatgpt-pill f02-chatgpt-chip" style="left:370px;top:1340px;background:#99E885;">EXPLAINS</div>
+<div id="f02-chatgpt-c3" class="f02-chatgpt-pill f02-chatgpt-chip" style="left:230px;top:1475px;background:#F7CB46;">BRAINSTORMS</div>
+<div id="f02-chatgpt-stripe" class="f02-chatgpt-stripe" data-layout-allow-overflow style="--c:#FE90E8;right:-70px;top:200px;width:240px;height:90px;transform:rotate(10deg);"></div>
+</div>
+<script>
+(function(){
+const tl = gsap.timeline({ paused: true });
+const q = (s) => document.querySelectorAll(s);
+const pop = (sel, t, from) => { const r = (from&&from.rot)||0; tl.fromTo(sel, {scale:0, opacity:0, rotation:r-12}, {scale:1, opacity:1, rotation:r, duration:0.5, ease:"back.out(1.8)"}, t); };
+const slam = (sel, t) => tl.fromTo(sel, {y:80, opacity:0, scale:1.08}, {y:0, opacity:1, scale:1, duration:0.45, ease:"power3.out"}, t);
+const rise = (sel, t) => tl.fromTo(sel, {y:140, opacity:0}, {y:0, opacity:1, duration:0.6, ease:"power3.out"}, t);
+const type = (sel, t, dur) => { const ch = q(sel); const step = dur/Math.max(1,ch.length); ch.forEach((c,i)=>tl.to(c,{opacity:1,duration:0.01}, t+i*step)); };
+tl.fromTo("#f02-chatgpt-rank",{scale:0,rotation:-30,opacity:0},{scale:1,rotation:-6,opacity:1,duration:0.55,ease:"back.out(1.7)"},0.0);
+pop("#f02-chatgpt-tag",0.25);
+slam("#f02-chatgpt-name",1.25);
+rise("#f02-chatgpt-chat",2.2); type(".f02-chatgpt-ch",2.6,1.4);
+tl.fromTo("#f02-chatgpt-send",{scale:1},{scale:0.85,duration:0.1,ease:"power2.in",yoyo:true,repeat:1},4.05);
+[1,2,3,4].forEach((i)=>tl.fromTo("#f02-chatgpt-l"+i,{scaleX:0},{scaleX:1,duration:0.45,ease:"power3.out"},4.3+i*0.18));
+pop("#f02-chatgpt-c1",4.35,{rot:-3}); pop("#f02-chatgpt-c2",5.39,{rot:2}); pop("#f02-chatgpt-c3",7.12,{rot:-2});
+tl.fromTo("#f02-chatgpt-stripe",{x:300},{x:0,duration:0.5,ease:"power3.out"},0.4);
+tl.set({}, {}, 8.299);
+window.__timelines["02-chatgpt"] = tl;
+})();
+</script>
+</div>
+</template>

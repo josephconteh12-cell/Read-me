@@ -1,0 +1,61 @@
+<template>
+<div id="root" data-composition-id="01-hook" data-start="0" data-duration="4.949" data-width="1080" data-height="1920">
+<script src="assets/vendor/gsap.min.js"></script>
+<style>
+@font-face{font-family:"Inter";font-weight:500;font-style:normal;src:url("assets/fonts/inter-latin-500-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:700;font-style:normal;src:url("assets/fonts/inter-latin-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:800;font-style:normal;src:url("assets/fonts/inter-latin-800-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:900;font-style:normal;src:url("assets/fonts/inter-latin-900-normal.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-weight:400;font-style:normal;src:url("assets/fonts/space-grotesk-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-weight:700;font-style:normal;src:url("assets/fonts/space-grotesk-latin-700-normal.woff2") format("woff2");}
+#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:"Inter",sans-serif;color:#000000;}
+#f01-hook-bg{position:absolute;inset:0;background:#FFDC8B;}
+#f01-hook-dots{position:absolute;inset:0;background-image:radial-gradient(#000 2px, transparent 2.4px);background-size:40px 40px;opacity:.13;}
+.f01-hook-abs{position:absolute;}
+.f01-hook-card{position:absolute;background:#FFFFFF;border:6px solid #000;box-shadow:12px 12px 0 #000;}
+.f01-hook-pill{position:absolute;display:flex;align-items:center;justify-content:center;border:4px solid #000;box-shadow:6px 6px 0 #000;border-radius:9999px;font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;}
+.f01-hook-display{position:absolute;font-weight:900;text-transform:uppercase;letter-spacing:-0.03em;line-height:.92;white-space:nowrap;}
+.f01-hook-rank{left:64px;top:140px;width:270px;height:230px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:170px;letter-spacing:-0.05em;line-height:1;}
+.f01-hook-star{position:absolute;border:0;clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);}
+.f01-hook-stripe{position:absolute;border:5px solid #000;background:repeating-linear-gradient(45deg,#000 0 14px,var(--c) 14px 32px);}
+.f01-hook-chip{position:absolute;height:104px;padding:0 38px;font-size:40px;}
+.f01-hook-line{position:absolute;height:26px;background:#000;opacity:.14;}
+.f01-hook-mono{font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
+.f01-hook-ch{opacity:0;}
+
+#f01-hook-w1{left:64px;font-size:150px;} #f01-hook-w2,#f01-hook-w3{left:64px;font-size:190px;}
+</style>
+<div id="f01-hook-ground" class="clip" data-start="0" data-duration="4.949" data-track-index="0" style="position:absolute;inset:0;"><div id="f01-hook-bg"></div><div id="f01-hook-dots"></div></div>
+<div id="f01-hook-stage" class="clip" data-start="0" data-duration="4.949" data-track-index="1" style="position:absolute;inset:0;">
+<div id="f01-hook-w1" class="f01-hook-display" style="top:170px;">YOUR PHONE</div>
+<div id="f01-hook-w2" class="f01-hook-display" style="top:340px;">CAN DO</div>
+<div id="f01-hook-w3" class="f01-hook-display" style="top:550px;"><span style="background:#FE90E8;border:6px solid #000;box-shadow:12px 12px 0 #000;padding:0 22px;display:inline-block;">MORE</span></div>
+<div id="f01-hook-stripe" class="f01-hook-stripe" data-layout-allow-overflow style="--c:#C0F7FE;right:-60px;top:470px;width:330px;height:120px;transform:rotate(8deg);"></div>
+<div id="f01-hook-starwrap" class="f01-hook-abs" style="right:30px;top:640px;width:200px;height:200px;"><div class="f01-hook-star" style="inset:0;background:#000;"></div><div class="f01-hook-star" style="inset:12px;background:#FE90E8;"></div></div>
+<div id="f01-hook-sticker" class="f01-hook-card" style="left:120px;top:830px;width:840px;height:420px;background:#F7CB46;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-4deg);">
+  <div style="font-weight:900;font-size:260px;line-height:.85;letter-spacing:-0.05em;">5</div>
+  <div style="font-weight:900;font-size:120px;line-height:1;letter-spacing:-0.03em;">AI APPS</div>
+</div>
+<div id="f01-hook-worth" class="f01-hook-pill" style="left:290px;top:1330px;height:110px;padding:0 48px;font-size:46px;background:#99E885;">WORTH HAVING</div>
+<div id="f01-hook-stripe2" class="f01-hook-stripe" data-layout-allow-overflow style="--c:#99E885;left:-50px;top:1440px;width:260px;height:90px;transform:rotate(-7deg);"></div>
+</div>
+<script>
+(function(){
+const tl = gsap.timeline({ paused: true });
+const q = (s) => document.querySelectorAll(s);
+const pop = (sel, t, from) => { const r = (from&&from.rot)||0; tl.fromTo(sel, {scale:0, opacity:0, rotation:r-12}, {scale:1, opacity:1, rotation:r, duration:0.5, ease:"back.out(1.8)"}, t); };
+const slam = (sel, t) => tl.fromTo(sel, {y:80, opacity:0, scale:1.08}, {y:0, opacity:1, scale:1, duration:0.45, ease:"power3.out"}, t);
+const rise = (sel, t) => tl.fromTo(sel, {y:140, opacity:0}, {y:0, opacity:1, duration:0.6, ease:"power3.out"}, t);
+const type = (sel, t, dur) => { const ch = q(sel); const step = dur/Math.max(1,ch.length); ch.forEach((c,i)=>tl.to(c,{opacity:1,duration:0.01}, t+i*step)); };
+slam("#f01-hook-w1",0.0); slam("#f01-hook-w2",0.5); tl.fromTo("#f01-hook-w3",{x:-900},{x:0,duration:0.45,ease:"power3.out"},1.15);
+tl.fromTo("#f01-hook-stripe",{x:400,opacity:0},{x:0,opacity:1,duration:0.5,ease:"power3.out"},1.9);
+tl.fromTo("#f01-hook-starwrap",{scale:0,rotation:-90},{scale:1,rotation:0,duration:0.6,ease:"back.out(1.6)"},2.1);
+tl.fromTo("#f01-hook-sticker",{scale:0,rotation:-25,opacity:0},{scale:1,rotation:-4,opacity:1,duration:0.6,ease:"back.out(1.6)"},3.05);
+pop("#f01-hook-worth",4.05); tl.fromTo("#f01-hook-stripe2",{x:-300},{x:0,duration:0.45,ease:"power3.out"},4.2);
+tl.to("#f01-hook-starwrap",{rotation:8,duration:0.3,ease:"sine.inOut",repeat:1,yoyo:true},4.4);
+tl.set({}, {}, 4.949);
+window.__timelines["01-hook"] = tl;
+})();
+</script>
+</div>
+</template>

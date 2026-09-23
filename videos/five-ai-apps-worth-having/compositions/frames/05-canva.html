@@ -1,0 +1,71 @@
+<template>
+<div id="root" data-composition-id="05-canva" data-start="0" data-duration="6.357" data-width="1080" data-height="1920">
+<script src="assets/vendor/gsap.min.js"></script>
+<style>
+@font-face{font-family:"Inter";font-weight:500;font-style:normal;src:url("assets/fonts/inter-latin-500-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:700;font-style:normal;src:url("assets/fonts/inter-latin-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:800;font-style:normal;src:url("assets/fonts/inter-latin-800-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:900;font-style:normal;src:url("assets/fonts/inter-latin-900-normal.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-weight:400;font-style:normal;src:url("assets/fonts/space-grotesk-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-weight:700;font-style:normal;src:url("assets/fonts/space-grotesk-latin-700-normal.woff2") format("woff2");}
+#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:"Inter",sans-serif;color:#000000;}
+#f05-canva-bg{position:absolute;inset:0;background:#F7CB46;}
+#f05-canva-dots{position:absolute;inset:0;background-image:radial-gradient(#000 2px, transparent 2.4px);background-size:40px 40px;opacity:.13;}
+.f05-canva-abs{position:absolute;}
+.f05-canva-card{position:absolute;background:#FFFFFF;border:6px solid #000;box-shadow:12px 12px 0 #000;}
+.f05-canva-pill{position:absolute;display:flex;align-items:center;justify-content:center;border:4px solid #000;box-shadow:6px 6px 0 #000;border-radius:9999px;font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;}
+.f05-canva-display{position:absolute;font-weight:900;text-transform:uppercase;letter-spacing:-0.03em;line-height:.92;white-space:nowrap;}
+.f05-canva-rank{left:64px;top:140px;width:270px;height:230px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:170px;letter-spacing:-0.05em;line-height:1;}
+.f05-canva-star{position:absolute;border:0;clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);}
+.f05-canva-stripe{position:absolute;border:5px solid #000;background:repeating-linear-gradient(45deg,#000 0 14px,var(--c) 14px 32px);}
+.f05-canva-chip{position:absolute;height:104px;padding:0 38px;font-size:40px;}
+.f05-canva-line{position:absolute;height:26px;background:#000;opacity:.14;}
+.f05-canva-mono{font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
+.f05-canva-ch{opacity:0;}
+</style>
+<div id="f05-canva-ground" class="clip" data-start="0" data-duration="6.357" data-track-index="0" style="position:absolute;inset:0;"><div id="f05-canva-bg"></div><div id="f05-canva-dots"></div></div>
+<div id="f05-canva-stage" class="clip" data-start="0" data-duration="6.357" data-track-index="1" style="position:absolute;inset:0;">
+
+<div id="f05-canva-rank" class="f05-canva-card f05-canva-rank" style="transform:rotate(-6deg);">#2</div>
+<div id="f05-canva-tag" class="f05-canva-pill" style="left:380px;top:200px;height:92px;padding:0 36px;font-size:36px;background:#99E885;">AI APP</div>
+<div id="f05-canva-name" class="f05-canva-display" style="left:64px;top:430px;font-size:200px;">CANVA</div>
+<div id="f05-canva-prompt" class="f05-canva-pill" style="left:64px;top:680px;width:952px;height:120px;justify-content:flex-start;padding-left:40px;background:#FFFFFF;font-family:'Inter',sans-serif;font-weight:500;letter-spacing:0;text-transform:none;font-size:46px;">✎&nbsp;&nbsp;<span class="f05-canva-ch">B</span><span class="f05-canva-ch">i</span><span class="f05-canva-ch">r</span><span class="f05-canva-ch">t</span><span class="f05-canva-ch">h</span><span class="f05-canva-ch">d</span><span class="f05-canva-ch">a</span><span class="f05-canva-ch">y</span><span class="f05-canva-ch">&nbsp;</span><span class="f05-canva-ch">p</span><span class="f05-canva-ch">a</span><span class="f05-canva-ch">r</span><span class="f05-canva-ch">t</span><span class="f05-canva-ch">y</span><span class="f05-canva-ch">&nbsp;</span><span class="f05-canva-ch">p</span><span class="f05-canva-ch">o</span><span class="f05-canva-ch">s</span><span class="f05-canva-ch">t</span><span class="f05-canva-ch">e</span><span class="f05-canva-ch">r</span></div>
+<div id="f05-canva-t1" class="f05-canva-card" style="left:64px;top:870px;width:450px;height:420px;background:#FE90E8;">
+  <div class="f05-canva-abs f05-canva-mono" style="left:24px;top:20px;font-size:30px;padding:4px 14px;background:#fff;border:3px solid #000;">POST</div>
+  <div class="f05-canva-abs" style="left:120px;top:120px;width:210px;height:210px;border:6px solid #000;border-radius:50%;background:#F7CB46;"></div>
+</div>
+<div id="f05-canva-t2" class="f05-canva-card" style="left:566px;top:870px;width:450px;height:250px;background:#C0F7FE;">
+  <div class="f05-canva-abs f05-canva-mono" style="left:24px;top:20px;font-size:30px;padding:4px 14px;background:#fff;border:3px solid #000;">SLIDE</div>
+  <div class="f05-canva-abs" style="left:24px;top:110px;width:300px;height:26px;background:#000;"></div>
+  <div class="f05-canva-abs" style="left:24px;top:160px;width:220px;height:20px;background:#000;opacity:.3;"></div>
+</div>
+<div id="f05-canva-t3" data-layout-allow-overflow class="f05-canva-card" style="left:566px;top:1170px;width:450px;height:330px;background:#99E885;overflow:hidden;">
+  <div class="f05-canva-abs f05-canva-mono" style="left:24px;top:20px;font-size:30px;padding:4px 14px;background:#fff;border:3px solid #000;z-index:2;">IMAGE</div>
+  <div class="f05-canva-abs" style="left:40px;top:150px;width:0;height:0;border-left:130px solid transparent;border-right:130px solid transparent;border-bottom:180px solid #000;"></div>
+  <div class="f05-canva-abs" style="left:250px;top:210px;width:0;height:0;border-left:90px solid transparent;border-right:90px solid transparent;border-bottom:120px solid #000;opacity:.6;"></div>
+  <div class="f05-canva-abs" style="left:340px;top:90px;width:60px;height:60px;border-radius:50%;background:#F7CB46;border:4px solid #000;"></div>
+</div>
+<div id="f05-canva-done" class="f05-canva-pill" style="left:90px;top:1360px;height:120px;padding:0 50px;font-size:54px;background:#FFFFFF;">DONE ✓</div>
+</div>
+<script>
+(function(){
+const tl = gsap.timeline({ paused: true });
+const q = (s) => document.querySelectorAll(s);
+const pop = (sel, t, from) => { const r = (from&&from.rot)||0; tl.fromTo(sel, {scale:0, opacity:0, rotation:r-12}, {scale:1, opacity:1, rotation:r, duration:0.5, ease:"back.out(1.8)"}, t); };
+const slam = (sel, t) => tl.fromTo(sel, {y:80, opacity:0, scale:1.08}, {y:0, opacity:1, scale:1, duration:0.45, ease:"power3.out"}, t);
+const rise = (sel, t) => tl.fromTo(sel, {y:140, opacity:0}, {y:0, opacity:1, duration:0.6, ease:"power3.out"}, t);
+const type = (sel, t, dur) => { const ch = q(sel); const step = dur/Math.max(1,ch.length); ch.forEach((c,i)=>tl.to(c,{opacity:1,duration:0.01}, t+i*step)); };
+tl.fromTo("#f05-canva-rank",{scale:0,rotation:-30,opacity:0},{scale:1,rotation:-6,opacity:1,duration:0.55,ease:"back.out(1.7)"},0.0);
+pop("#f05-canva-tag",0.25);
+slam("#f05-canva-name",0.95);
+tl.fromTo("#f05-canva-prompt",{x:-1100},{x:0,duration:0.5,ease:"power3.out"},1.75); type(".f05-canva-ch",2.0,0.8);
+tl.fromTo("#f05-canva-t1",{y:200,opacity:0,rotation:-12},{y:0,opacity:1,rotation:-3,duration:0.55,ease:"back.out(1.5)"},2.95);
+tl.fromTo("#f05-canva-t2",{y:200,opacity:0,rotation:12},{y:0,opacity:1,rotation:2,duration:0.55,ease:"back.out(1.5)"},3.38);
+tl.fromTo("#f05-canva-t3",{y:200,opacity:0,rotation:-10},{y:0,opacity:1,rotation:-2,duration:0.55,ease:"back.out(1.5)"},3.98);
+pop("#f05-canva-done",5.35,{rot:-6});
+tl.set({}, {}, 6.357);
+window.__timelines["05-canva"] = tl;
+})();
+</script>
+</div>
+</template>

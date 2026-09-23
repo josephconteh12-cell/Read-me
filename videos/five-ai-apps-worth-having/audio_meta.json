@@ -1,0 +1,730 @@
+{
+  "bgm": null,
+  "bgm_pending": false,
+  "voices": [
+    {
+      "frame": 1,
+      "path": "assets/voice/01.wav",
+      "duration_s": 4.949,
+      "words": [
+        {
+          "text": "Your",
+          "start": 0.0,
+          "end": 0.239
+        },
+        {
+          "text": "phone",
+          "start": 0.239,
+          "end": 0.478
+        },
+        {
+          "text": "can",
+          "start": 0.478,
+          "end": 0.716
+        },
+        {
+          "text": "do",
+          "start": 0.716,
+          "end": 0.955
+        },
+        {
+          "text": "way",
+          "start": 0.955,
+          "end": 1.194
+        },
+        {
+          "text": "more",
+          "start": 1.194,
+          "end": 1.433
+        },
+        {
+          "text": "than",
+          "start": 1.433,
+          "end": 1.671
+        },
+        {
+          "text": "you",
+          "start": 1.671,
+          "end": 1.91
+        },
+        {
+          "text": "think.",
+          "start": 1.91,
+          "end": 2.149
+        },
+        {
+          "text": "Here",
+          "start": 2.674,
+          "end": 2.913
+        },
+        {
+          "text": "are",
+          "start": 2.913,
+          "end": 3.152
+        },
+        {
+          "text": "five",
+          "start": 3.152,
+          "end": 3.391
+        },
+        {
+          "text": "AI",
+          "start": 3.391,
+          "end": 3.868
+        },
+        {
+          "text": "apps",
+          "start": 3.868,
+          "end": 4.107
+        },
+        {
+          "text": "worth",
+          "start": 4.107,
+          "end": 4.346
+        },
+        {
+          "text": "having.",
+          "start": 4.346,
+          "end": 4.823
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "path": "assets/voice/02.wav",
+      "duration_s": 8.299,
+      "words": [
+        {
+          "text": "Number",
+          "start": 0.0,
+          "end": 0.495
+        },
+        {
+          "text": "five:",
+          "start": 0.495,
+          "end": 0.742
+        },
+        {
+          "text": "ChatGPT.",
+          "start": 1.286,
+          "end": 1.534
+        },
+        {
+          "text": "Your",
+          "start": 2.078,
+          "end": 2.325
+        },
+        {
+          "text": "all-round",
+          "start": 2.325,
+          "end": 2.82
+        },
+        {
+          "text": "assistant.",
+          "start": 2.82,
+          "end": 3.562
+        },
+        {
+          "text": "It",
+          "start": 4.106,
+          "end": 4.354
+        },
+        {
+          "text": "drafts",
+          "start": 4.354,
+          "end": 4.601
+        },
+        {
+          "text": "emails,",
+          "start": 4.601,
+          "end": 5.096
+        },
+        {
+          "text": "explains",
+          "start": 5.392,
+          "end": 5.887
+        },
+        {
+          "text": "anything,",
+          "start": 5.887,
+          "end": 6.629
+        },
+        {
+          "text": "and",
+          "start": 6.926,
+          "end": 7.173
+        },
+        {
+          "text": "brainstorms",
+          "start": 7.173,
+          "end": 7.668
+        },
+        {
+          "text": "with",
+          "start": 7.668,
+          "end": 7.916
+        },
+        {
+          "text": "you.",
+          "start": 7.916,
+          "end": 8.163
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "path": "assets/voice/03.wav",
+      "duration_s": 6.08,
+      "words": [
+        {
+          "text": "Number",
+          "start": 0.0,
+          "end": 0.375
+        },
+        {
+          "text": "four:",
+          "start": 0.375,
+          "end": 0.563
+        },
+        {
+          "text": "Perplexity.",
+          "start": 0.976,
+          "end": 1.726
+        },
+        {
+          "text": "Ask",
+          "start": 2.139,
+          "end": 2.327
+        },
+        {
+          "text": "a",
+          "start": 2.327,
+          "end": 2.514
+        },
+        {
+          "text": "question,",
+          "start": 2.514,
+          "end": 2.89
+        },
+        {
+          "text": "get",
+          "start": 3.115,
+          "end": 3.303
+        },
+        {
+          "text": "a",
+          "start": 3.303,
+          "end": 3.49
+        },
+        {
+          "text": "short",
+          "start": 3.49,
+          "end": 3.678
+        },
+        {
+          "text": "answer,",
+          "start": 3.678,
+          "end": 4.053
+        },
+        {
+          "text": "with",
+          "start": 4.278,
+          "end": 4.466
+        },
+        {
+          "text": "sources",
+          "start": 4.466,
+          "end": 4.841
+        },
+        {
+          "text": "you",
+          "start": 4.841,
+          "end": 5.029
+        },
+        {
+          "text": "can",
+          "start": 5.029,
+          "end": 5.216
+        },
+        {
+          "text": "actually",
+          "start": 5.216,
+          "end": 5.779
+        },
+        {
+          "text": "check.",
+          "start": 5.779,
+          "end": 5.967
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "path": "assets/voice/04.wav",
+      "duration_s": 6.485,
+      "words": [
+        {
+          "text": "Number",
+          "start": 0.0,
+          "end": 0.408
+        },
+        {
+          "text": "three:",
+          "start": 0.408,
+          "end": 0.612
+        },
+        {
+          "text": "Otter.",
+          "start": 1.06,
+          "end": 1.468
+        },
+        {
+          "text": "It",
+          "start": 1.917,
+          "end": 2.121
+        },
+        {
+          "text": "records",
+          "start": 2.121,
+          "end": 2.529
+        },
+        {
+          "text": "your",
+          "start": 2.529,
+          "end": 2.733
+        },
+        {
+          "text": "meetings,",
+          "start": 2.733,
+          "end": 3.141
+        },
+        {
+          "text": "writes",
+          "start": 3.385,
+          "end": 3.793
+        },
+        {
+          "text": "the",
+          "start": 3.793,
+          "end": 3.997
+        },
+        {
+          "text": "transcript",
+          "start": 3.997,
+          "end": 4.405
+        },
+        {
+          "text": "live,",
+          "start": 4.405,
+          "end": 4.609
+        },
+        {
+          "text": "and",
+          "start": 4.854,
+          "end": 5.057
+        },
+        {
+          "text": "hands",
+          "start": 5.057,
+          "end": 5.261
+        },
+        {
+          "text": "you",
+          "start": 5.261,
+          "end": 5.465
+        },
+        {
+          "text": "the",
+          "start": 5.465,
+          "end": 5.669
+        },
+        {
+          "text": "action",
+          "start": 5.669,
+          "end": 6.077
+        },
+        {
+          "text": "items.",
+          "start": 6.077,
+          "end": 6.485
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "path": "assets/voice/05.wav",
+      "duration_s": 6.357,
+      "words": [
+        {
+          "text": "Number",
+          "start": 0.0,
+          "end": 0.383
+        },
+        {
+          "text": "two:",
+          "start": 0.383,
+          "end": 0.574
+        },
+        {
+          "text": "Canva.",
+          "start": 0.996,
+          "end": 1.379
+        },
+        {
+          "text": "Type",
+          "start": 1.8,
+          "end": 1.991
+        },
+        {
+          "text": "what",
+          "start": 1.991,
+          "end": 2.183
+        },
+        {
+          "text": "you",
+          "start": 2.183,
+          "end": 2.374
+        },
+        {
+          "text": "want:",
+          "start": 2.374,
+          "end": 2.566
+        },
+        {
+          "text": "posts,",
+          "start": 2.987,
+          "end": 3.179
+        },
+        {
+          "text": "slides,",
+          "start": 3.408,
+          "end": 3.791
+        },
+        {
+          "text": "images.",
+          "start": 4.021,
+          "end": 4.595
+        },
+        {
+          "text": "And",
+          "start": 5.017,
+          "end": 5.208
+        },
+        {
+          "text": "the",
+          "start": 5.208,
+          "end": 5.4
+        },
+        {
+          "text": "design",
+          "start": 5.4,
+          "end": 5.783
+        },
+        {
+          "text": "builds",
+          "start": 5.783,
+          "end": 5.974
+        },
+        {
+          "text": "itself.",
+          "start": 5.974,
+          "end": 6.357
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "path": "assets/voice/06.wav",
+      "duration_s": 9.216,
+      "words": [
+        {
+          "text": "And",
+          "start": 0.112,
+          "end": 0.325
+        },
+        {
+          "text": "number",
+          "start": 0.325,
+          "end": 0.75
+        },
+        {
+          "text": "one:",
+          "start": 0.75,
+          "end": 0.963
+        },
+        {
+          "text": "NotebookLM.",
+          "start": 1.431,
+          "end": 2.069
+        },
+        {
+          "text": "Drop",
+          "start": 2.537,
+          "end": 2.75
+        },
+        {
+          "text": "in",
+          "start": 2.75,
+          "end": 2.962
+        },
+        {
+          "text": "your",
+          "start": 2.962,
+          "end": 3.175
+        },
+        {
+          "text": "own",
+          "start": 3.175,
+          "end": 3.388
+        },
+        {
+          "text": "notes",
+          "start": 3.388,
+          "end": 3.813
+        },
+        {
+          "text": "and",
+          "start": 3.813,
+          "end": 4.026
+        },
+        {
+          "text": "PDFs.",
+          "start": 4.026,
+          "end": 4.877
+        },
+        {
+          "text": "It",
+          "start": 5.345,
+          "end": 5.557
+        },
+        {
+          "text": "answers",
+          "start": 5.557,
+          "end": 5.983
+        },
+        {
+          "text": "only",
+          "start": 5.983,
+          "end": 6.408
+        },
+        {
+          "text": "from",
+          "start": 6.408,
+          "end": 6.621
+        },
+        {
+          "text": "them,",
+          "start": 6.621,
+          "end": 6.834
+        },
+        {
+          "text": "and",
+          "start": 7.089,
+          "end": 7.302
+        },
+        {
+          "text": "even",
+          "start": 7.302,
+          "end": 7.727
+        },
+        {
+          "text": "turns",
+          "start": 7.727,
+          "end": 7.94
+        },
+        {
+          "text": "them",
+          "start": 7.94,
+          "end": 8.152
+        },
+        {
+          "text": "into",
+          "start": 8.152,
+          "end": 8.578
+        },
+        {
+          "text": "a",
+          "start": 8.578,
+          "end": 8.791
+        },
+        {
+          "text": "podcast.",
+          "start": 8.791,
+          "end": 9.216
+        }
+      ]
+    },
+    {
+      "frame": 7,
+      "path": "assets/voice/07.wav",
+      "duration_s": 4.096,
+      "words": [
+        {
+          "text": "Which",
+          "start": 0.0,
+          "end": 0.226
+        },
+        {
+          "text": "one",
+          "start": 0.226,
+          "end": 0.451
+        },
+        {
+          "text": "are",
+          "start": 0.451,
+          "end": 0.677
+        },
+        {
+          "text": "you",
+          "start": 0.677,
+          "end": 0.903
+        },
+        {
+          "text": "trying",
+          "start": 0.903,
+          "end": 1.128
+        },
+        {
+          "text": "first?",
+          "start": 1.128,
+          "end": 1.354
+        },
+        {
+          "text": "Save",
+          "start": 1.851,
+          "end": 2.076
+        },
+        {
+          "text": "this",
+          "start": 2.076,
+          "end": 2.302
+        },
+        {
+          "text": "list,",
+          "start": 2.302,
+          "end": 2.528
+        },
+        {
+          "text": "and",
+          "start": 2.798,
+          "end": 3.024
+        },
+        {
+          "text": "follow",
+          "start": 3.024,
+          "end": 3.475
+        },
+        {
+          "text": "for",
+          "start": 3.475,
+          "end": 3.701
+        },
+        {
+          "text": "more.",
+          "start": 3.701,
+          "end": 3.927
+        }
+      ]
+    }
+  ],
+  "sfx": [
+    {
+      "frame": 1,
+      "file": "assets/sfx/whoosh.mp3",
+      "offset_s": 0.0,
+      "duration_s": 0.57,
+      "volume": 0.35
+    },
+    {
+      "frame": 1,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 3.15,
+      "duration_s": 0.72,
+      "volume": 0.35
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/whoosh.mp3",
+      "offset_s": 1.29,
+      "duration_s": 0.57,
+      "volume": 0.35
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/typing.mp3",
+      "offset_s": 2.6,
+      "duration_s": 1.5,
+      "volume": 0.2
+    },
+    {
+      "frame": 2,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 4.35,
+      "duration_s": 0.72,
+      "volume": 0.35
+    },
+    {
+      "frame": 3,
+      "file": "assets/sfx/whoosh.mp3",
+      "offset_s": 0.98,
+      "duration_s": 0.57,
+      "volume": 0.35
+    },
+    {
+      "frame": 3,
+      "file": "assets/sfx/typing.mp3",
+      "offset_s": 2.3,
+      "duration_s": 1.5,
+      "volume": 0.2
+    },
+    {
+      "frame": 3,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 4.47,
+      "duration_s": 0.72,
+      "volume": 0.35
+    },
+    {
+      "frame": 4,
+      "file": "assets/sfx/whoosh.mp3",
+      "offset_s": 1.06,
+      "duration_s": 0.57,
+      "volume": 0.35
+    },
+    {
+      "frame": 5,
+      "file": "assets/sfx/whoosh.mp3",
+      "offset_s": 1.0,
+      "duration_s": 0.57,
+      "volume": 0.35
+    },
+    {
+      "frame": 5,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 2.99,
+      "duration_s": 0.72,
+      "volume": 0.35
+    },
+    {
+      "frame": 6,
+      "file": "assets/sfx/whoosh.mp3",
+      "offset_s": 1.43,
+      "duration_s": 0.57,
+      "volume": 0.35
+    },
+    {
+      "frame": 6,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 8.79,
+      "duration_s": 0.72,
+      "volume": 0.35
+    },
+    {
+      "frame": 7,
+      "file": "assets/sfx/pop.mp3",
+      "offset_s": 1.85,
+      "duration_s": 0.72,
+      "volume": 0.35
+    }
+  ]
+}

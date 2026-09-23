@@ -1,0 +1,57 @@
+<template>
+<div id="root" data-composition-id="07-wrap" data-start="0" data-duration="4.096" data-width="1080" data-height="1920">
+<script src="assets/vendor/gsap.min.js"></script>
+<style>
+@font-face{font-family:"Inter";font-weight:500;font-style:normal;src:url("assets/fonts/inter-latin-500-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:700;font-style:normal;src:url("assets/fonts/inter-latin-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:800;font-style:normal;src:url("assets/fonts/inter-latin-800-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:900;font-style:normal;src:url("assets/fonts/inter-latin-900-normal.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-weight:400;font-style:normal;src:url("assets/fonts/space-grotesk-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-weight:700;font-style:normal;src:url("assets/fonts/space-grotesk-latin-700-normal.woff2") format("woff2");}
+#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:"Inter",sans-serif;color:#000000;}
+#f07-wrap-bg{position:absolute;inset:0;background:#000000;}
+#f07-wrap-dots{position:absolute;inset:0;background-image:radial-gradient(#fff 2px, transparent 2.4px);background-size:40px 40px;opacity:.13;}
+.f07-wrap-abs{position:absolute;}
+.f07-wrap-card{position:absolute;background:#FFFFFF;border:6px solid #000;box-shadow:12px 12px 0 #000;}
+.f07-wrap-pill{position:absolute;display:flex;align-items:center;justify-content:center;border:4px solid #000;box-shadow:6px 6px 0 #000;border-radius:9999px;font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;}
+.f07-wrap-display{position:absolute;font-weight:900;text-transform:uppercase;letter-spacing:-0.03em;line-height:.92;white-space:nowrap;}
+.f07-wrap-rank{left:64px;top:140px;width:270px;height:230px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:170px;letter-spacing:-0.05em;line-height:1;}
+.f07-wrap-star{position:absolute;border:0;clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);}
+.f07-wrap-stripe{position:absolute;border:5px solid #000;background:repeating-linear-gradient(45deg,#000 0 14px,var(--c) 14px 32px);}
+.f07-wrap-chip{position:absolute;height:104px;padding:0 38px;font-size:40px;}
+.f07-wrap-line{position:absolute;height:26px;background:#000;opacity:.14;}
+.f07-wrap-mono{font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
+.f07-wrap-ch{opacity:0;}
+
+#f07-wrap-frame{position:absolute;left:70px;top:230px;width:940px;height:1010px;background:#000;border:6px solid #fff;box-shadow:18px 18px 0 #F7CB46;}
+</style>
+<div id="f07-wrap-ground" class="clip" data-start="0" data-duration="4.096" data-track-index="0" style="position:absolute;inset:0;"><div id="f07-wrap-bg"></div><div id="f07-wrap-dots"></div></div>
+<div id="f07-wrap-stage" class="clip" data-start="0" data-duration="4.096" data-track-index="1" style="position:absolute;inset:0;">
+<div id="f07-wrap-frame">
+  <div class="f07-wrap-display" style="left:56px;top:80px;font-size:124px;color:#fff;line-height:1;">WHICH ONE</div>
+  <div class="f07-wrap-display" style="left:56px;top:220px;font-size:124px;color:#F7CB46;line-height:1;">FIRST?</div>
+  <div id="f07-wrap-a1" class="f07-wrap-pill" style="left:70px;top:560px;height:92px;padding:0 30px;font-size:36px;background:#C0F7FE;">CHATGPT</div><div id="f07-wrap-a2" class="f07-wrap-pill" style="left:470px;top:560px;height:92px;padding:0 30px;font-size:36px;background:#FE90E8;">PERPLEXITY</div><div id="f07-wrap-a3" class="f07-wrap-pill" style="left:70px;top:680px;height:92px;padding:0 30px;font-size:36px;background:#99E885;">OTTER.AI</div><div id="f07-wrap-a4" class="f07-wrap-pill" style="left:470px;top:680px;height:92px;padding:0 30px;font-size:36px;background:#F7CB46;">CANVA</div><div id="f07-wrap-a5" class="f07-wrap-pill" style="left:70px;top:800px;height:92px;padding:0 30px;font-size:36px;background:#FFDC8B;">NOTEBOOKLM</div>
+</div>
+<div id="f07-wrap-save" class="f07-wrap-abs" style="left:110px;top:1330px;height:130px;padding:0 50px;display:flex;align-items:center;background:#F7CB46;border:5px solid #fff;box-shadow:8px 8px 0 #fff;font-weight:900;font-size:60px;letter-spacing:-0.01em;">SAVE THIS</div>
+<div id="f07-wrap-follow" class="f07-wrap-pill" style="left:600px;top:1340px;height:110px;padding:0 44px;font-size:44px;background:#FE90E8;border-color:#fff;box-shadow:6px 6px 0 #fff;">+ FOLLOW</div>
+<div id="f07-wrap-starwrap" class="f07-wrap-abs" style="right:10px;top:120px;width:200px;height:200px;"><div class="f07-wrap-star" style="inset:0;background:#fff;"></div><div class="f07-wrap-star" style="inset:10px;background:#FE90E8;"></div></div>
+</div>
+<script>
+(function(){
+const tl = gsap.timeline({ paused: true });
+const q = (s) => document.querySelectorAll(s);
+const pop = (sel, t, from) => { const r = (from&&from.rot)||0; tl.fromTo(sel, {scale:0, opacity:0, rotation:r-12}, {scale:1, opacity:1, rotation:r, duration:0.5, ease:"back.out(1.8)"}, t); };
+const slam = (sel, t) => tl.fromTo(sel, {y:80, opacity:0, scale:1.08}, {y:0, opacity:1, scale:1, duration:0.45, ease:"power3.out"}, t);
+const rise = (sel, t) => tl.fromTo(sel, {y:140, opacity:0}, {y:0, opacity:1, duration:0.6, ease:"power3.out"}, t);
+const type = (sel, t, dur) => { const ch = q(sel); const step = dur/Math.max(1,ch.length); ch.forEach((c,i)=>tl.to(c,{opacity:1,duration:0.01}, t+i*step)); };
+rise("#f07-wrap-frame",0.0);
+[1,2,3,4,5].forEach((i)=>pop("#f07-wrap-a"+i,0.45+i*0.12,{rot:(i%2?-3:2)}));
+tl.fromTo("#f07-wrap-starwrap",{scale:0,rotation:-90},{scale:1,rotation:0,duration:0.5,ease:"back.out(1.6)"},1.2);
+pop("#f07-wrap-save",1.8,{rot:-3}); pop("#f07-wrap-follow",2.95,{rot:3});
+tl.to("#f07-wrap-frame,#f07-wrap-save,#f07-wrap-follow,#f07-wrap-starwrap",{opacity:0,duration:0.35,ease:"power2.in"},3.72);
+tl.set({}, {}, 4.096);
+window.__timelines["07-wrap"] = tl;
+})();
+</script>
+</div>
+</template>

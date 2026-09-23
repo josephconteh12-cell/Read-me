@@ -1,0 +1,71 @@
+<template>
+<div id="root" data-composition-id="03-perplexity" data-start="0" data-duration="6.08" data-width="1080" data-height="1920">
+<script src="assets/vendor/gsap.min.js"></script>
+<style>
+@font-face{font-family:"Inter";font-weight:500;font-style:normal;src:url("assets/fonts/inter-latin-500-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:700;font-style:normal;src:url("assets/fonts/inter-latin-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:800;font-style:normal;src:url("assets/fonts/inter-latin-800-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:900;font-style:normal;src:url("assets/fonts/inter-latin-900-normal.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-weight:400;font-style:normal;src:url("assets/fonts/space-grotesk-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-weight:700;font-style:normal;src:url("assets/fonts/space-grotesk-latin-700-normal.woff2") format("woff2");}
+#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:"Inter",sans-serif;color:#000000;}
+#f03-perplexity-bg{position:absolute;inset:0;background:#FE90E8;}
+#f03-perplexity-dots{position:absolute;inset:0;background-image:radial-gradient(#000 2px, transparent 2.4px);background-size:40px 40px;opacity:.13;}
+.f03-perplexity-abs{position:absolute;}
+.f03-perplexity-card{position:absolute;background:#FFFFFF;border:6px solid #000;box-shadow:12px 12px 0 #000;}
+.f03-perplexity-pill{position:absolute;display:flex;align-items:center;justify-content:center;border:4px solid #000;box-shadow:6px 6px 0 #000;border-radius:9999px;font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;}
+.f03-perplexity-display{position:absolute;font-weight:900;text-transform:uppercase;letter-spacing:-0.03em;line-height:.92;white-space:nowrap;}
+.f03-perplexity-rank{left:64px;top:140px;width:270px;height:230px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:170px;letter-spacing:-0.05em;line-height:1;}
+.f03-perplexity-star{position:absolute;border:0;clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);}
+.f03-perplexity-stripe{position:absolute;border:5px solid #000;background:repeating-linear-gradient(45deg,#000 0 14px,var(--c) 14px 32px);}
+.f03-perplexity-chip{position:absolute;height:104px;padding:0 38px;font-size:40px;}
+.f03-perplexity-line{position:absolute;height:26px;background:#000;opacity:.14;}
+.f03-perplexity-mono{font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
+.f03-perplexity-ch{opacity:0;}
+</style>
+<div id="f03-perplexity-ground" class="clip" data-start="0" data-duration="6.08" data-track-index="0" style="position:absolute;inset:0;"><div id="f03-perplexity-bg"></div><div id="f03-perplexity-dots"></div></div>
+<div id="f03-perplexity-stage" class="clip" data-start="0" data-duration="6.08" data-track-index="1" style="position:absolute;inset:0;">
+
+<div id="f03-perplexity-rank" class="f03-perplexity-card f03-perplexity-rank" style="transform:rotate(-6deg);">#4</div>
+<div id="f03-perplexity-tag" class="f03-perplexity-pill" style="left:380px;top:200px;height:92px;padding:0 36px;font-size:36px;background:#C0F7FE;">AI APP</div>
+<div id="f03-perplexity-name" class="f03-perplexity-display" style="left:64px;top:430px;font-size:136px;">PERPLEXITY</div>
+<div id="f03-perplexity-search" class="f03-perplexity-card" style="left:64px;top:690px;width:952px;height:140px;display:flex;align-items:center;">
+  <div class="f03-perplexity-abs" style="left:34px;top:34px;width:60px;height:60px;border:6px solid #000;border-radius:50%;"></div>
+  <div class="f03-perplexity-abs" style="left:122px;top:40px;font-size:46px;font-weight:500;white-space:nowrap;"><span class="f03-perplexity-ch">B</span><span class="f03-perplexity-ch">e</span><span class="f03-perplexity-ch">s</span><span class="f03-perplexity-ch">t</span><span class="f03-perplexity-ch">&nbsp;</span><span class="f03-perplexity-ch">t</span><span class="f03-perplexity-ch">i</span><span class="f03-perplexity-ch">m</span><span class="f03-perplexity-ch">e</span><span class="f03-perplexity-ch">&nbsp;</span><span class="f03-perplexity-ch">t</span><span class="f03-perplexity-ch">o</span><span class="f03-perplexity-ch">&nbsp;</span><span class="f03-perplexity-ch">v</span><span class="f03-perplexity-ch">i</span><span class="f03-perplexity-ch">s</span><span class="f03-perplexity-ch">i</span><span class="f03-perplexity-ch">t</span><span class="f03-perplexity-ch">&nbsp;</span><span class="f03-perplexity-ch">J</span><span class="f03-perplexity-ch">a</span><span class="f03-perplexity-ch">p</span><span class="f03-perplexity-ch">a</span><span class="f03-perplexity-ch">n</span><span class="f03-perplexity-ch">?</span></div>
+</div>
+<div id="f03-perplexity-ans" class="f03-perplexity-card" style="left:64px;top:890px;width:952px;height:400px;">
+  <div class="f03-perplexity-abs f03-perplexity-mono" style="left:36px;top:30px;font-size:30px;padding:6px 16px;background:#C0F7FE;border:3px solid #000;">ANSWER</div>
+  <div id="f03-perplexity-l1" class="f03-perplexity-line" style="left:36px;top:120px;width:860px;transform-origin:left;"></div>
+  <div id="f03-perplexity-l2" class="f03-perplexity-line" style="left:36px;top:172px;width:800px;transform-origin:left;"></div>
+  <div id="f03-perplexity-l3" class="f03-perplexity-line" style="left:36px;top:224px;width:600px;transform-origin:left;"></div>
+  <div id="f03-perplexity-mark" class="f03-perplexity-abs" style="left:24px;top:282px;width:560px;height:96px;background:#F7CB46;transform-origin:left;"></div>
+  <div id="f03-perplexity-s1" class="f03-perplexity-pill" style="left:40px;top:292px;width:120px;height:76px;font-size:36px;background:#FFFFFF;">1</div>
+  <div id="f03-perplexity-s2" class="f03-perplexity-pill" style="left:190px;top:292px;width:120px;height:76px;font-size:36px;background:#FFFFFF;">2</div>
+  <div id="f03-perplexity-s3" class="f03-perplexity-pill" style="left:340px;top:292px;width:120px;height:76px;font-size:36px;background:#FFFFFF;">3</div>
+</div>
+<div id="f03-perplexity-c1" class="f03-perplexity-pill f03-perplexity-chip" style="left:64px;top:1380px;background:#99E885;">SOURCES YOU CAN CHECK</div>
+<div id="f03-perplexity-starwrap" class="f03-perplexity-abs" style="right:50px;top:1370px;width:170px;height:170px;"><div class="f03-perplexity-star" style="inset:0;background:#000;"></div><div class="f03-perplexity-star" style="inset:10px;background:#F7CB46;"></div></div>
+</div>
+<script>
+(function(){
+const tl = gsap.timeline({ paused: true });
+const q = (s) => document.querySelectorAll(s);
+const pop = (sel, t, from) => { const r = (from&&from.rot)||0; tl.fromTo(sel, {scale:0, opacity:0, rotation:r-12}, {scale:1, opacity:1, rotation:r, duration:0.5, ease:"back.out(1.8)"}, t); };
+const slam = (sel, t) => tl.fromTo(sel, {y:80, opacity:0, scale:1.08}, {y:0, opacity:1, scale:1, duration:0.45, ease:"power3.out"}, t);
+const rise = (sel, t) => tl.fromTo(sel, {y:140, opacity:0}, {y:0, opacity:1, duration:0.6, ease:"power3.out"}, t);
+const type = (sel, t, dur) => { const ch = q(sel); const step = dur/Math.max(1,ch.length); ch.forEach((c,i)=>tl.to(c,{opacity:1,duration:0.01}, t+i*step)); };
+tl.fromTo("#f03-perplexity-rank",{scale:0,rotation:-30,opacity:0},{scale:1,rotation:-6,opacity:1,duration:0.55,ease:"back.out(1.7)"},0.0);
+pop("#f03-perplexity-tag",0.25);
+slam("#f03-perplexity-name",0.95);
+rise("#f03-perplexity-search",2.05); type(".f03-perplexity-ch",2.35,1.0);
+rise("#f03-perplexity-ans",3.4); [1,2,3].forEach((i)=>tl.fromTo("#f03-perplexity-l"+i,{scaleX:0},{scaleX:1,duration:0.4,ease:"power3.out"},3.6+i*0.15));
+pop("#f03-perplexity-s1",4.47); pop("#f03-perplexity-s2",4.62); pop("#f03-perplexity-s3",4.77);
+pop("#f03-perplexity-c1",5.0,{rot:-2});
+tl.fromTo("#f03-perplexity-mark",{scaleX:0},{scaleX:1,duration:0.4,ease:"power3.out"},5.7);
+tl.fromTo("#f03-perplexity-starwrap",{scale:0,rotation:-90},{scale:1,rotation:0,duration:0.5,ease:"back.out(1.6)"},5.75);
+tl.set({}, {}, 6.08);
+window.__timelines["03-perplexity"] = tl;
+})();
+</script>
+</div>
+</template>

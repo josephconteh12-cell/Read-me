@@ -1,0 +1,68 @@
+<template>
+<div id="root" data-composition-id="04-otter" data-start="0" data-duration="6.485" data-width="1080" data-height="1920">
+<script src="assets/vendor/gsap.min.js"></script>
+<style>
+@font-face{font-family:"Inter";font-weight:500;font-style:normal;src:url("assets/fonts/inter-latin-500-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:700;font-style:normal;src:url("assets/fonts/inter-latin-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:800;font-style:normal;src:url("assets/fonts/inter-latin-800-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:900;font-style:normal;src:url("assets/fonts/inter-latin-900-normal.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-weight:400;font-style:normal;src:url("assets/fonts/space-grotesk-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-weight:700;font-style:normal;src:url("assets/fonts/space-grotesk-latin-700-normal.woff2") format("woff2");}
+#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:"Inter",sans-serif;color:#000000;}
+#f04-otter-bg{position:absolute;inset:0;background:#99E885;}
+#f04-otter-dots{position:absolute;inset:0;background-image:radial-gradient(#000 2px, transparent 2.4px);background-size:40px 40px;opacity:.13;}
+.f04-otter-abs{position:absolute;}
+.f04-otter-card{position:absolute;background:#FFFFFF;border:6px solid #000;box-shadow:12px 12px 0 #000;}
+.f04-otter-pill{position:absolute;display:flex;align-items:center;justify-content:center;border:4px solid #000;box-shadow:6px 6px 0 #000;border-radius:9999px;font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;}
+.f04-otter-display{position:absolute;font-weight:900;text-transform:uppercase;letter-spacing:-0.03em;line-height:.92;white-space:nowrap;}
+.f04-otter-rank{left:64px;top:140px;width:270px;height:230px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:170px;letter-spacing:-0.05em;line-height:1;}
+.f04-otter-star{position:absolute;border:0;clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);}
+.f04-otter-stripe{position:absolute;border:5px solid #000;background:repeating-linear-gradient(45deg,#000 0 14px,var(--c) 14px 32px);}
+.f04-otter-chip{position:absolute;height:104px;padding:0 38px;font-size:40px;}
+.f04-otter-line{position:absolute;height:26px;background:#000;opacity:.14;}
+.f04-otter-mono{font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
+.f04-otter-ch{opacity:0;}
+</style>
+<div id="f04-otter-ground" class="clip" data-start="0" data-duration="6.485" data-track-index="0" style="position:absolute;inset:0;"><div id="f04-otter-bg"></div><div id="f04-otter-dots"></div></div>
+<div id="f04-otter-stage" class="clip" data-start="0" data-duration="6.485" data-track-index="1" style="position:absolute;inset:0;">
+
+<div id="f04-otter-rank" class="f04-otter-card f04-otter-rank" style="transform:rotate(-6deg);">#3</div>
+<div id="f04-otter-tag" class="f04-otter-pill" style="left:380px;top:200px;height:92px;padding:0 36px;font-size:36px;background:#FE90E8;">AI APP</div>
+<div id="f04-otter-name" class="f04-otter-display" style="left:64px;top:430px;font-size:168px;">OTTER.AI</div>
+<div id="f04-otter-rec" class="f04-otter-card" style="left:64px;top:690px;width:952px;height:520px;">
+  <div id="f04-otter-dot" class="f04-otter-abs" style="right:150px;top:32px;width:34px;height:34px;border-radius:50%;background:#FE90E8;border:4px solid #000;"></div>
+  <div class="f04-otter-abs f04-otter-mono" style="right:40px;top:30px;font-size:32px;">REC</div>
+  <div class="f04-otter-bar f04-otter-abs" style="left:40px;top:130px;width:20px;height:40px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:74px;top:110px;width:20px;height:80px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:108px;top:90px;width:20px;height:120px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:142px;top:115px;width:20px;height:70px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:176px;top:75px;width:20px;height:150px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:210px;top:100px;width:20px;height:100px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:244px;top:120px;width:20px;height:60px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:278px;top:85px;width:20px;height:130px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:312px;top:105px;width:20px;height:90px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:346px;top:125px;width:20px;height:50px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:380px;top:95px;width:20px;height:110px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:414px;top:80px;width:20px;height:140px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:448px;top:115px;width:20px;height:70px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:482px;top:130px;width:20px;height:40px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:516px;top:100px;width:20px;height:100px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:550px;top:85px;width:20px;height:130px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:584px;top:110px;width:20px;height:80px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:618px;top:120px;width:20px;height:60px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:652px;top:90px;width:20px;height:120px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:686px;top:105px;width:20px;height:90px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:720px;top:125px;width:20px;height:50px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:754px;top:110px;width:20px;height:80px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:788px;top:95px;width:20px;height:110px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:822px;top:120px;width:20px;height:60px;background:#000;transform-origin:center;"></div><div class="f04-otter-bar f04-otter-abs" style="left:856px;top:135px;width:20px;height:30px;background:#000;transform-origin:center;"></div>
+  <div id="f04-otter-t1" class="f04-otter-abs" style="left:40px;top:300px;display:flex;align-items:center;gap:16px;"><span class="f04-otter-mono" style="font-size:26px;">ALEX:</span><span style="display:block;width:620px;height:24px;background:#000;opacity:.14;transform-origin:left;" id="f04-otter-tb1"></span></div><div id="f04-otter-t2" class="f04-otter-abs" style="left:40px;top:362px;display:flex;align-items:center;gap:16px;"><span class="f04-otter-mono" style="font-size:26px;">SAM:</span><span style="display:block;width:760px;height:24px;background:#000;opacity:.14;transform-origin:left;" id="f04-otter-tb2"></span></div><div id="f04-otter-t3" class="f04-otter-abs" style="left:40px;top:424px;display:flex;align-items:center;gap:16px;"><span class="f04-otter-mono" style="font-size:26px;">ALEX:</span><span style="display:block;width:540px;height:24px;background:#000;opacity:.14;transform-origin:left;" id="f04-otter-tb3"></span></div>
+</div>
+<div id="f04-otter-todo" class="f04-otter-card" style="left:420px;top:1150px;width:600px;height:330px;background:#F7CB46;transform:rotate(3deg);">
+  <div class="f04-otter-abs f04-otter-mono" style="left:30px;top:26px;font-size:32px;">ACTION ITEMS</div>
+  <div class="f04-otter-abs" style="left:30px;top:100px;display:flex;align-items:center;gap:22px;"><div style="width:60px;height:60px;border:5px solid #000;background:#fff;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:900;"><span id="f04-otter-k1">✓</span></div><span style="display:block;width:380px;height:26px;background:#000;opacity:.22;"></span></div>
+  <div class="f04-otter-abs" style="left:30px;top:200px;display:flex;align-items:center;gap:22px;"><div style="width:60px;height:60px;border:5px solid #000;background:#fff;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:900;"><span id="f04-otter-k2">✓</span></div><span style="display:block;width:300px;height:26px;background:#000;opacity:.22;"></span></div>
+</div>
+<div id="f04-otter-stripe" class="f04-otter-stripe" data-layout-allow-overflow style="--c:#F7CB46;left:-60px;top:1330px;width:420px;height:110px;transform:rotate(-6deg);"></div>
+</div>
+<script>
+(function(){
+const tl = gsap.timeline({ paused: true });
+const q = (s) => document.querySelectorAll(s);
+const pop = (sel, t, from) => { const r = (from&&from.rot)||0; tl.fromTo(sel, {scale:0, opacity:0, rotation:r-12}, {scale:1, opacity:1, rotation:r, duration:0.5, ease:"back.out(1.8)"}, t); };
+const slam = (sel, t) => tl.fromTo(sel, {y:80, opacity:0, scale:1.08}, {y:0, opacity:1, scale:1, duration:0.45, ease:"power3.out"}, t);
+const rise = (sel, t) => tl.fromTo(sel, {y:140, opacity:0}, {y:0, opacity:1, duration:0.6, ease:"power3.out"}, t);
+const type = (sel, t, dur) => { const ch = q(sel); const step = dur/Math.max(1,ch.length); ch.forEach((c,i)=>tl.to(c,{opacity:1,duration:0.01}, t+i*step)); };
+tl.fromTo("#f04-otter-rank",{scale:0,rotation:-30,opacity:0},{scale:1,rotation:-6,opacity:1,duration:0.55,ease:"back.out(1.7)"},0.0);
+pop("#f04-otter-tag",0.25);
+slam("#f04-otter-name",1.0);
+rise("#f04-otter-rec",2.05);
+tl.fromTo(".f04-otter-bar",{scaleY:0},{scaleY:1,duration:0.35,ease:"power3.out",stagger:0.04},2.3);
+tl.fromTo("#f04-otter-dot",{scale:1},{scale:1.35,duration:0.35,ease:"sine.inOut",yoyo:true,repeat:5},2.2);
+[1,2,3].forEach((i)=>{ tl.fromTo("#f04-otter-t"+i,{opacity:0},{opacity:1,duration:0.2},3.95+(i-1)*0.4); tl.fromTo("#f04-otter-tb"+i,{scaleX:0},{scaleX:1,duration:0.4,ease:"power3.out"},3.95+(i-1)*0.4); });
+tl.fromTo("#f04-otter-todo",{scale:0,rotation:-20,opacity:0},{scale:1,rotation:3,opacity:1,duration:0.5,ease:"back.out(1.7)"},5.55);
+pop("#f04-otter-k1",5.95); pop("#f04-otter-k2",6.15);
+tl.fromTo("#f04-otter-stripe",{x:-400},{x:0,duration:0.5,ease:"power3.out"},1.2);
+tl.set({}, {}, 6.485);
+window.__timelines["04-otter"] = tl;
+})();
+</script>
+</div>
+</template>

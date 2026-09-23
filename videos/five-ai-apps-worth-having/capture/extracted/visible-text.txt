@@ -1,0 +1,8 @@
+Make a 45 seconds video talking about 5 AI apps that are good to have.
+
+Chosen apps and their one job:
+1. ChatGPT: all-round assistant. Drafts emails, explains anything, brainstorms ideas, answers by voice.
+2. Perplexity: AI search engine. Asks the web for you and gives a short answer with sources you can check.
+3. NotebookLM (Google): upload your own notes, PDFs or slides; it answers only from them, makes study guides and turns them into a podcast-style audio overview.
+4. Otter.ai: records meetings and lectures, writes a live transcript, and gives a summary with action items.
+5. Canva (Magic Studio): type what you want and get designs, social posts, presentations and images; removes backgrounds in one tap.

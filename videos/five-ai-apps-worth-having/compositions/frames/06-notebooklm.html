@@ -1,0 +1,73 @@
+<template>
+<div id="root" data-composition-id="06-notebooklm" data-start="0" data-duration="9.216" data-width="1080" data-height="1920">
+<script src="assets/vendor/gsap.min.js"></script>
+<style>
+@font-face{font-family:"Inter";font-weight:500;font-style:normal;src:url("assets/fonts/inter-latin-500-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:700;font-style:normal;src:url("assets/fonts/inter-latin-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:800;font-style:normal;src:url("assets/fonts/inter-latin-800-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:900;font-style:normal;src:url("assets/fonts/inter-latin-900-normal.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-weight:400;font-style:normal;src:url("assets/fonts/space-grotesk-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"Space Grotesk";font-weight:700;font-style:normal;src:url("assets/fonts/space-grotesk-latin-700-normal.woff2") format("woff2");}
+#root{position:relative;width:100%;height:100%;overflow:hidden;font-family:"Inter",sans-serif;color:#000000;}
+#f06-notebooklm-bg{position:absolute;inset:0;background:#FFFDF5;}
+#f06-notebooklm-dots{position:absolute;inset:0;background-image:radial-gradient(#000 2px, transparent 2.4px);background-size:40px 40px;opacity:.13;}
+.f06-notebooklm-abs{position:absolute;}
+.f06-notebooklm-card{position:absolute;background:#FFFFFF;border:6px solid #000;box-shadow:12px 12px 0 #000;}
+.f06-notebooklm-pill{position:absolute;display:flex;align-items:center;justify-content:center;border:4px solid #000;box-shadow:6px 6px 0 #000;border-radius:9999px;font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;}
+.f06-notebooklm-display{position:absolute;font-weight:900;text-transform:uppercase;letter-spacing:-0.03em;line-height:.92;white-space:nowrap;}
+.f06-notebooklm-rank{left:64px;top:140px;width:270px;height:230px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:170px;letter-spacing:-0.05em;line-height:1;}
+.f06-notebooklm-star{position:absolute;border:0;clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);}
+.f06-notebooklm-stripe{position:absolute;border:5px solid #000;background:repeating-linear-gradient(45deg,#000 0 14px,var(--c) 14px 32px);}
+.f06-notebooklm-chip{position:absolute;height:104px;padding:0 38px;font-size:40px;}
+.f06-notebooklm-line{position:absolute;height:26px;background:#000;opacity:.14;}
+.f06-notebooklm-mono{font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
+.f06-notebooklm-ch{opacity:0;}
+#f06-notebooklm-rank{width:320px;height:270px;font-size:210px;}</style>
+<div id="f06-notebooklm-ground" class="clip" data-start="0" data-duration="9.216" data-track-index="0" style="position:absolute;inset:0;"><div id="f06-notebooklm-bg"></div><div id="f06-notebooklm-dots"></div></div>
+<div id="f06-notebooklm-stage" class="clip" data-start="0" data-duration="9.216" data-track-index="1" style="position:absolute;inset:0;">
+<div id="f06-notebooklm-burst" class="f06-notebooklm-abs" style="left:-80px;top:40px;width:560px;height:560px;"><div class="f06-notebooklm-star" style="inset:0;background:#000;"></div><div class="f06-notebooklm-star" style="inset:16px;background:#F7CB46;"></div></div>
+<div id="f06-notebooklm-rank" class="f06-notebooklm-card f06-notebooklm-rank" style="transform:rotate(-6deg);">#1</div>
+<div id="f06-notebooklm-tag" class="f06-notebooklm-pill" style="left:430px;top:230px;height:92px;padding:0 36px;font-size:36px;background:#F7CB46;">TOP PICK</div>
+<div id="f06-notebooklm-name" class="f06-notebooklm-display" style="left:64px;top:430px;font-size:140px;">NOTEBOOKLM</div>
+<div id="f06-notebooklm-nb" class="f06-notebooklm-card" style="left:64px;top:840px;width:952px;height:440px;">
+  <div class="f06-notebooklm-abs f06-notebooklm-mono" style="left:36px;top:30px;font-size:32px;">MY NOTEBOOK</div>
+  <div class="f06-notebooklm-abs" style="left:0;top:90px;width:100%;height:6px;background:#000;"></div>
+  <div id="f06-notebooklm-only" class="f06-notebooklm-pill" style="left:500px;top:14px;height:66px;padding:0 26px;font-size:28px;background:#99E885;">ONLY YOUR SOURCES</div>
+</div>
+<div id="f06-notebooklm-d1" class="f06-notebooklm-card" style="left:120px;top:970px;width:250px;height:300px;background:#FE90E8;display:flex;align-items:center;justify-content:center;"><span class="f06-notebooklm-mono" style="font-size:44px;">NOTES</span></div>
+<div id="f06-notebooklm-d2" class="f06-notebooklm-card" style="left:415px;top:960px;width:250px;height:300px;background:#C0F7FE;display:flex;align-items:center;justify-content:center;"><span class="f06-notebooklm-mono" style="font-size:44px;">PDF</span></div>
+<div id="f06-notebooklm-d3" class="f06-notebooklm-card" style="left:710px;top:975px;width:250px;height:300px;background:#FFDC8B;display:flex;align-items:center;justify-content:center;"><span class="f06-notebooklm-mono" style="font-size:44px;">SLIDES</span></div>
+<div id="f06-notebooklm-pod" class="f06-notebooklm-card" style="left:64px;top:840px;width:952px;height:440px;background:#000;border-color:#000;box-shadow:12px 12px 0 #F7CB46;">
+  <div class="f06-notebooklm-abs" style="left:60px;top:80px;width:190px;height:190px;border-radius:50%;background:#F7CB46;border:6px solid #fff;"></div>
+  <div class="f06-notebooklm-abs" style="left:128px;top:122px;width:0;height:0;border-top:54px solid transparent;border-bottom:54px solid transparent;border-left:80px solid #000;"></div>
+  <div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:300px;top:130px;width:16px;height:40px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:330px;top:105px;width:16px;height:90px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:360px;top:80px;width:16px;height:140px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:390px;top:115px;width:16px;height:70px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:420px;top:95px;width:16px;height:110px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:450px;top:70px;width:16px;height:160px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:480px;top:110px;width:16px;height:80px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:510px;top:125px;width:16px;height:50px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:540px;top:90px;width:16px;height:120px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:570px;top:75px;width:16px;height:150px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:600px;top:105px;width:16px;height:90px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:630px;top:120px;width:16px;height:60px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:660px;top:85px;width:16px;height:130px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:690px;top:115px;width:16px;height:70px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:720px;top:130px;width:16px;height:40px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:750px;top:100px;width:16px;height:100px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:780px;top:120px;width:16px;height:60px;background:#F7CB46;transform-origin:center;"></div><div class="f06-notebooklm-wv f06-notebooklm-abs" style="left:810px;top:135px;width:16px;height:30px;background:#F7CB46;transform-origin:center;"></div>
+  <div class="f06-notebooklm-abs f06-notebooklm-mono" style="left:60px;top:320px;font-size:64px;color:#fff;">PODCAST</div>
+</div>
+</div>
+<script>
+(function(){
+const tl = gsap.timeline({ paused: true });
+const q = (s) => document.querySelectorAll(s);
+const pop = (sel, t, from) => { const r = (from&&from.rot)||0; tl.fromTo(sel, {scale:0, opacity:0, rotation:r-12}, {scale:1, opacity:1, rotation:r, duration:0.5, ease:"back.out(1.8)"}, t); };
+const slam = (sel, t) => tl.fromTo(sel, {y:80, opacity:0, scale:1.08}, {y:0, opacity:1, scale:1, duration:0.45, ease:"power3.out"}, t);
+const rise = (sel, t) => tl.fromTo(sel, {y:140, opacity:0}, {y:0, opacity:1, duration:0.6, ease:"power3.out"}, t);
+const type = (sel, t, dur) => { const ch = q(sel); const step = dur/Math.max(1,ch.length); ch.forEach((c,i)=>tl.to(c,{opacity:1,duration:0.01}, t+i*step)); };
+tl.fromTo("#f06-notebooklm-rank",{scale:0,rotation:-30,opacity:0},{scale:1,rotation:-6,opacity:1,duration:0.55,ease:"back.out(1.7)"},0.0);
+pop("#f06-notebooklm-tag",0.6);
+slam("#f06-notebooklm-name",1.4);
+tl.fromTo("#f06-notebooklm-burst",{scale:0,rotation:-120},{scale:1,rotation:0,duration:0.7,ease:"power3.out"},0.0);
+tl.to("#f06-notebooklm-burst",{rotation:20,duration:8.5,ease:"none"},0.7);
+rise("#f06-notebooklm-nb",2.45);
+tl.fromTo("#f06-notebooklm-d1",{y:-900,rotation:-15,opacity:0},{y:0,rotation:-5,opacity:1,duration:0.5,ease:"power3.out"},3.3);
+tl.fromTo("#f06-notebooklm-d2",{y:-900,rotation:12,opacity:0},{y:0,rotation:3,opacity:1,duration:0.5,ease:"power3.out"},3.95);
+tl.fromTo("#f06-notebooklm-d3",{y:-900,rotation:-10,opacity:0},{y:0,rotation:-2,opacity:1,duration:0.5,ease:"power3.out"},4.35);
+pop("#f06-notebooklm-only",5.35,{rot:-2});
+tl.set("#f06-notebooklm-pod",{visibility:"hidden"},0); tl.set("#f06-notebooklm-pod",{visibility:"visible"},8.55); tl.set("#f06-notebooklm-nb,#f06-notebooklm-d1,#f06-notebooklm-d2,#f06-notebooklm-d3",{visibility:"hidden"},8.62);
+tl.fromTo("#f06-notebooklm-pod",{scale:0.2,opacity:0,rotation:-8},{scale:1,opacity:1,rotation:0,duration:0.5,ease:"back.out(1.6)"},8.55);
+tl.fromTo(".f06-notebooklm-wv",{scaleY:0.1},{scaleY:1,duration:0.3,ease:"power3.out",stagger:0.015},8.8);
+tl.set({}, {}, 9.216);
+window.__timelines["06-notebooklm"] = tl;
+})();
+</script>
+</div>
+</template>
